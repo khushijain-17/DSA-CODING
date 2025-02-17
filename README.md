@@ -65,9 +65,8 @@ public:
 ```
 ####  Time & Space Complexity
 ~~~
-
-    Time complexity: O(n)O(n)
-    Space complexity: O(n)O(n)
+Time complexity: O(n)
+Space complexity: O(n)
 ~~~
 
 
