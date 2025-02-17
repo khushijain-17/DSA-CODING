@@ -20,8 +20,8 @@ public:
 ```
 ### Time & Space Complexity
 ~~~
-  Time complexity: O(n^2)
-  Space complexity: O(1)
+Time complexity: O(n^2)
+Space complexity: O(1)
 ~~~
   
 ### 2. Sorting
@@ -43,9 +43,31 @@ public:
 #### Time & Space Complexity
 ~~~
 
-    Time complexity: O(nlog⁡n)O(nlogn)
-    Space complexity: O(1)O(1) or O(n)O(n) depending on the sorting algorithm.
+Time complexity: O(nlog⁡n)
+Space complexity: O(1)O(1) or O(n)O(n) depending on the sorting algorithm.
 
+~~~
+### 3. Hash Set
+```
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        unordered_set<int> seen;
+        for (int num : nums) {
+            if (seen.count(num)) {
+                return true;
+            }
+            seen.insert(num);
+        }
+        return false;
+    }
+};
+```
+####  Time & Space Complexity
+~~~
+
+    Time complexity: O(n)O(n)
+    Space complexity: O(n)O(n)
 ~~~
 
 
